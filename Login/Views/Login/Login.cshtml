@@ -1,0 +1,25 @@
+﻿@model Login.Models.Zaposlenik
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.TextBoxFor(m => m.UserName)
+        @Html.TextBoxFor(m => m.Password)
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary rounded-0">Prijava</button>
+
+        </div>
+    }
+</body>
+</html>
